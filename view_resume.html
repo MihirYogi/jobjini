@@ -1,0 +1,101 @@
+<!--Code for Edit and Delete-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100&family=Satisfy&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+
+    <title>JobGenie : Admin Dashboard</title>
+
+
+    
+</head>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bi bi-list' id="header-toggle"></i> </div>
+        <h1 class="jg">JobGenie</h1>
+        <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <div class="nav_list">
+                    <a href="index.html" class="nav_link"> <i class='bi bi-grid nav_icon'></i>
+                        <span class="nav_name">Dashboard</span>
+                    </a>
+                    <a href="job_list.html" class="nav_link"> <i class='bi bi-card-text nav_icon'></i> <span
+                            class="nav_name">Job List</span>
+                    </a>
+                    <a href="#" class="nav_link active"> <i class='bi bi-file-arrow-down-fill nav_icon'></i> <span
+                            class="nav_name">View Resume</span>
+                    </a>
+                    <a href="contact_list.html" class="nav_link"> <i class='bi bi-chat-right-text-fill nav_icon'></i> <span
+                            class="nav_name">Contact List</span>
+                    </a>
+                    <a href="add_user.html" class="nav_link"> <i class='bi bi-person-plus-fill nav_icon'></i> <span
+                            class="nav_name">Add User</span>
+                    </a>
+                    <a href="add_job.html" class="nav_link"> <i class='bi bi-briefcase-fill nav_icon'></i> <span
+                            class="nav_name">Add Job</span>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="nav_link"> <i class='bi bi-box-arrow-left nav_icon'></i> <span
+                    class="nav_name">SignOut</span>
+            </a>
+        </nav>
+    </div>
+    <!--Container Main start-->
+    <div class="height-100">
+        <h2 class="ps-3 pt-3 pb-3">View Resume</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="t-head text-white">
+                    <th>Sr.No.</th>
+                    <th>Company Name</th>
+                    <th>Job Title</th>
+                    <th>User Name</th>
+                    <th>User Email</th>
+                    <th>Mobile No.</th>
+                    <th>Resume</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody class="text-secondary">
+                    <td>1</td>
+                    <td>Google</td>
+                    <td>Web Developer</td>
+                    <td>Maitri Soni</td>
+                    <td>maitrisoni@gmail.com</td>
+                    <td>1234567890</td>
+                    <td class="text-center"><i class="bi bi-download text-primary"></i></td>
+                    <td class="text-center"><i class="bi bi-trash text-danger"></i></td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--Container Main end-->
+
+    <script src="index.js"></script>
+
+</html>
